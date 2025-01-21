@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile:Yasuo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-top: 10px;
+        }
+
+        /* تحريك الصورة */
+        @keyframes moveImage {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(50px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        img.profile {
+            width: 120px;
+            height: 120px;
+            margin-top: 15px;
+            border-radius: 50%;
+            animation: moveImage 3s linear infinite;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: lighter;
+            margin-top: 8px;
+        }
+
+        /* رأس الصفحة مع التاريخ والساعة */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .date-time {
+            font-size: 1rem;
+            text-align: right;
+            margin-right: 20px;
+            color: white; /* تغيير اللون إلى الأبيض */
+        }
+
+        .images-container {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .circle {
+            width: 45px;
+            height: 45px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .circle img {
+            width: 28px;
+            height: 28px;
+        }
+
+        /* تأثير hover على الأيقونات */
+        .circle:hover {
+            background-color: #444;
+            transform: scale(1.2);
+        }
+
+        video {
+            margin-top: 20px;
+            width: 90%;
+            max-width: 600px;
+            border: 2px solid white;
+            border-radius: 8px;
+        }
+
+        .rectangle-container {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .rectangle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+            width: 45%;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            height: 50px;
+        }
+
+        .rectangle p {
+            font-size: 1rem;
+            color: white;
+            margin: 0;
+        }
+
+        /* تأثير hover على المستطيلات */
+        .rectangle:hover {
+            background-color: #444;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- رأس الصفحة مع التاريخ والساعة -->
+    <div class="header">
+        <h1></h1>
+        <div class="date-time" id="date-time">
+            <!-- سيتم تحديث الوقت والتاريخ هنا -->
+        </div>
+    </div>
+
+    <img class="profile" src="anoos.jpg" alt="Yasuo Image">
+    <p>✨ تكسرنا الحياة فيجبرنا الله فنعود اقوى ✨</p>
+    
+    <!-- إدراج الصور -->
+    <div class="images-container">
+        <div class="circle">
+            <a href="https://www.youtube.com/@AnasMohamed-c3n" target="_blank">
+                <img src="1.png" alt="YouTube">
+            </a>
+        </div>
+        <div class="circle">
+            <a href="https://api.whatsapp.com/send?phone=201016073846" target="_blank">
+                <img src="2.png" alt="WhatsApp">
+            </a>
+        </div>
+        <div class="circle">
+            <a href="https://open.spotify.com/user/31263zpxvsjg6xftb2bio5dqj6r4?si=ebbb906f2f834ee8" target="_blank">
+                <img src="3.png" alt="Spotify">
+            </a>
+        </div>
+        <div class="circle">
+            <a href="https://www.instagram.com/yasuo_7653/" target="_blank">
+                <img src="4.png" alt="Instagram">
+            </a>
+        </div>
+        <div class="circle">
+            <a href="https://www.facebook.com/yasuo7653" target="_blank">
+                <img src="5.png" alt="Facebook">
+            </a>
+        </div>
+    </div>
+    
+    <!-- إدراج الفيديو مع autoplay و muted -->
+    <video controls autoplay muted>
+        <source src="6.mp4" type="video/mp4">
+        متصفحك لا يدعم تشغيل الفيديو.
+    </video>
+    
+    <!-- المستطيلات تحت الفيديو -->
+    <div class="rectangle-container">
+        <div class="rectangle">
+            <p>* 𝑁𝑎𝑚𝑒: 𝐴𝑛𝑎𝑠 💝</p>
+        </div>
+        <div class="rectangle">
+            <p>* 𝐴𝑔𝑒: 18✌️</p>
+        </div>
+    </div>
+    <div class="rectangle-container">
+        <div class="rectangle">
+            <p>* 𝑅𝑒𝑙𝑖𝑔𝑖𝑜𝑛: 𝑀𝑢𝑠𝑙𝑖𝑚☪️</p>
+        </div>
+        <div class="rectangle">
+            <p>* 𝑅𝑎𝑢𝑓 𝐹𝑎𝑖𝑘 - детство🎵</p>
+        </div>
+    </div>
+    <div class="rectangle-container">
+        <div class="rectangle">
+            <p>* "𝑅𝑢𝑠𝑠𝑖𝑎"💕</p>
+        </div>
+    </div>
+
+    <script>
+        // دالة لعرض التاريخ والساعة
+        function updateDateTime() {
+            const now = new Date();
+            const days = ["الأحد", "الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"];
+            const months = ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
+            const day = days[now.getDay()];
+            const date = now.getDate();
+            const month = months[now.getMonth()];
+            const year = now.getFullYear();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            
+            const dateTimeString = `${day}, ${date} ${month} ${year} | ${hours}:${minutes}:${seconds}`;
+            document.getElementById('date-time').textContent = dateTimeString;
+        }
+
+        // تحديث الوقت والتاريخ كل ثانية
+        setInterval(updateDateTime, 1000);
+        updateDateTime(); // تحديث الوقت عند تحميل الصفحة
+    </script>
+</body>
+</html>
